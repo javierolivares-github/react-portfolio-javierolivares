@@ -1,0 +1,147 @@
+/***************************** 
+NAVBAR 
+*****************************/
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.2rem;
+  height: 8rem;
+  background-color: var(--gray-96);
+}
+
+.navbar__container {
+  max-width: 112rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font: var(--logo);
+  color: var(--gray-12);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  list-style: none;
+}
+
+.navbar__link {
+  font: var(--caption-sb);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--gray-20);
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 100ms ease-in-out;
+}
+
+.navbar__link:hover {
+  border-bottom: 2px solid var(--gray-20);
+}
+
+.navbar__link__button {
+  display: inline-block;
+  text-decoration: none;
+  font: var(--caption-sb);
+  color: var(--gray-96);
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.8rem;
+  background-color: var(--purple-1);
+  transition: all 100ms ease;
+}
+
+.navbar__link__button:hover {
+  opacity: 0.9;
+}
+
+.navbar__link__button:active {
+  transform: scale(0.98);
+}
+
+.menu__icon {
+  color: var(--gray-12);
+  font-size: 2.4rem;
+}
+
+.menu__toggle {
+  display: none;
+}
+
+/* NAVBAR STYLES - TABLET 900PX / 16px = 56.25em*/
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+@media (max-width: 56.25em) {
+  .navbar {
+    position: relative;
+    z-index: 3;
+    padding: 0 4rem;
+  }
+
+  .logo.hidden {
+    visibility: hidden;
+    transition: all 200ms ease-in;
+  }
+
+  .navbar__menu {
+    position: absolute;
+    top: 8rem;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 8rem);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 4rem;
+    gap: 4rem;
+    background-color: var(--gray-96);
+    opacity: 0;
+    transition: all 200ms ease-in;
+  }
+
+  .navbar__menu.active {
+    left: 0;
+    opacity: 1;
+    transition: all 500ms ease-in;
+  }
+
+  .menu__toggle {
+    display: block;
+  }
+
+  .menu__icon {
+    cursor: pointer;
+  }
+
+  .navbar__link {
+    font: var(--headline-2-md);
+  }
+
+  .navbar__link__button {
+    font: var(--headline-2-md);
+  }
+}
+
+/* NAVBAR STYLES - MOBILE 420PX*/
+@media (max-width: 26.25em) {
+  .navbar {
+    padding: 0 2rem;
+  }
+
+  .navbar__menu {
+    padding: 0 2rem;
+  }
+
+  .navbar__link {
+    font: var(--headline-3-md);
+  }
+
+  .navbar__link__button {
+    font: var(--headline-3-md);
+  }
+}

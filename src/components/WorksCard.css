@@ -1,0 +1,87 @@
+/********************** 
+WORKS__CARD
+**********************/
+
+/********************** 
+DESKTOP VIEW 1440PX 
+**********************/
+
+.works__card {
+  width: 48rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.works__card__link {
+  cursor: pointer;
+  width: 100%;
+  height: 54.4rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+}
+
+.works__card__pic-wrapper {
+  width: 100%;
+  height: 54.4rem;
+}
+
+.works__card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0px 0px;
+}
+
+.works__card__texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.works__card__title {
+  font: var(--headline-2);
+  color: var(--gray-12);
+}
+
+.works__card__copy {
+  font: var(--body);
+  color: var(--gray-12);
+}
+
+/********************** 
+TABLET VIEW - 900px / 16px = 56.25em
+**********************/
+@media screen and (max-width: 56.25em) {
+  .works__card {
+    width: 100%;
+    gap: 0;
+  }
+
+  .works__card__pic-wrapper {
+    width: 100%;
+    height: 48rem;
+  }
+
+  .works__card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0px 0px;
+  }
+
+  .works__card__texts {
+    display: none;
+  }
+}
+
+/************************************* 
+MOBILE VIEW - 420PX /16PX = 26.25em
+*************************************/
+@media screen and (max-width: 26.25em) {
+
+  .works__card__pic-wrapper {
+    width: 100%;
+    height: 32rem;
+  }
+}
