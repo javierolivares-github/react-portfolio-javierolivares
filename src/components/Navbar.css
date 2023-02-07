@@ -85,7 +85,7 @@ NAVBAR
 
   .logo.hidden {
     visibility: hidden;
-    transition: all 200ms ease-in;
+    transition: all 100ms ease;
   }
 
   .navbar__menu {
@@ -101,13 +101,13 @@ NAVBAR
     gap: 4rem;
     background-color: var(--gray-96);
     opacity: 0;
-    transition: all 200ms ease-in;
+    transition: all 400ms ease;
   }
 
   .navbar__menu.active {
     left: 0;
     opacity: 1;
-    transition: all 500ms ease-in;
+    transition: all 400ms ease;
   }
 
   .menu__toggle {

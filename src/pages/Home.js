@@ -80,7 +80,7 @@ function Home() {
               <IoMailOutline className='email__icon' />
               <span className='email__text'>EMAIL</span>
             </div>
-            <p className="contact__email__down">javierolivares@gmail.com</p>
+            <p className="contact__email__down">olivaresd.francisco@gmail.com</p>
           </div>
         </div>
       </section>

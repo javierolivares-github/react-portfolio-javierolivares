@@ -58,9 +58,14 @@ TABLET VIEW - 900px / 16px = 56.25em
     gap: 0;
   }
 
+  .works__card__link {
+    width: 100%;
+    height: 44rem;
+  }
+
   .works__card__pic-wrapper {
     width: 100%;
-    height: 48rem;
+    height: 44rem;
   }
 
   .works__card__img {
@@ -80,8 +85,13 @@ MOBILE VIEW - 420PX /16PX = 26.25em
 *************************************/
 @media screen and (max-width: 26.25em) {
 
+  .works__card__link {
+    width: 100%;
+    height: 23.4rem;
+  }
+
   .works__card__pic-wrapper {
     width: 100%;
-    height: 32rem;
+    height: 23.4rem;
   }
 }
