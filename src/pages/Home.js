@@ -7,13 +7,13 @@ import { IoMailOutline } from "react-icons/io5";
 function Home() {
   return (
     <main>
-      <section className="hero">
+      <section id="hero" className="hero">
         <div className="hero__container">
           <h1 className="hero__heading">Hi, I'm Javier Olivares - Frontend Developer.</h1>
         </div>
       </section>
 
-      <section className="works">
+      <section id="works" className="works">
         <div className="works__container">
           <div className="works__col__left">
             <h2 className="works__heading">Recent works</h2>
@@ -67,7 +67,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="contact">
+      <section id="contact" className="contact">
         <div className="contact__container">
           <div className="contact__texts">
             <div className="contact__heading">Get in touch</div>

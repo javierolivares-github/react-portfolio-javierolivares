@@ -138,10 +138,11 @@ NAVBAR
   }
 
   .navbar__link {
-    font: var(--headline-3-md);
+    font: var(--body);
   }
 
   .navbar__link__button {
-    font: var(--headline-3-md);
+    font: var(--caption);
+    padding: 1.2rem 2.6rem;
   }
 }

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import "./Navbar.css";
 import { IoClose } from "react-icons/io5";
 import { IoMenu } from "react-icons/io5";
@@ -12,52 +11,52 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   return (
-    <nav className="navbar">
+    <nav id="navbar" className="navbar">
       <div className="navbar__container">
-        <Link
-          to="/"
+        <a
+          href="#hero"
           className={click ? "logo hidden" : "logo"}
           onClick={closeMobileMenu}
         >
           Javier Olivares
-        </Link>
+        </a>
 
         <ul className={click ? "navbar__menu active" : "navbar__menu"}>
           <li className="navbar__item">
-            <NavLink
-              to="#work"
+            <a
+              href="#works"
               className="navbar__link"
               onClick={closeMobileMenu}
             >
-              Work
-            </NavLink>
+              Works
+            </a>
           </li>
           <li className="navbar__item">
-            <NavLink
-              to="#about"
+            <a
+              href="#hero"
               className="navbar__link"
               onClick={closeMobileMenu}
             >
               About
-            </NavLink>
+            </a>
           </li>
           <li className="navbar__item">
-            <NavLink
-              to="#blog"
+            <a
+              href="#hero"
               className="navbar__link"
               onClick={closeMobileMenu}
             >
               Blog
-            </NavLink>
+            </a>
           </li>
           <li className="navbar__item">
-            <NavLink
-              to="#contact"
+            <a
+              href="#contact"
               className="navbar__link__button"
               onClick={closeMobileMenu}
             >
               Contact
-            </NavLink>
+            </a>
           </li>
         </ul>
 
