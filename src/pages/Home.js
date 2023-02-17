@@ -23,6 +23,7 @@ function Home() {
               alt="Agencia8px"
               title="Agencia8px"
               copy="Project designed for a Web Design and Development Agency. Fully responsive. Developed in HTML, CSS and JS."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg"
             />
             <WorksCard
               path="https://omnifood-code-projects.netlify.app/"
@@ -30,6 +31,7 @@ function Home() {
               alt="Omnifood"
               title="Omnifood"
               copy="Project designed for a Healthy Food Application. Developed in HTML, CSS and JS. Fully responsive. Tested with the Lighthouse development tool."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg"
             />
             <WorksCard
               path="https://id-studio.netlify.app/"
@@ -37,6 +39,7 @@ function Home() {
               alt="idStudio"
               title="idStudio"
               copy="Project inspired by the Interior Design industry. Fully responsive. Developed in HTML, CSS and JS."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg"
             />
           </div>
 
@@ -47,6 +50,15 @@ function Home() {
               alt="Travel"
               title="TRVL"
               copy="Project inspired by a Travel Agency. Fully responsive. Developed in React."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg,./logos/react.svg"
+            />
+            <WorksCard
+              path="https://react-todo-javier-olivares.netlify.app/"
+              src="./images/react-todo-app.png"
+              alt="Todo App"
+              title="Todo App"
+              copy="Todo App. Fully responsive. Developed in React."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg,./logos/react.svg"
             />
             <WorksCard
               path="https://ventura-site.netlify.app/"
@@ -54,15 +66,8 @@ function Home() {
               alt="Ventura"
               title="Ventura"
               copy="Project designed for the promotion of Financial Applications. Fully responsive. Developed in React."
+              techSrcs="./logos/html.svg,./logos/css.svg,./logos/js.svg,./logos/react.svg"
             />
-            <WorksCard
-              path="https://id-studio.netlify.app/"
-              src="./images/fintech.png"
-              alt="Fintech"
-              title="Fintech"
-              copy="Project designed for the Financial Industry. Fully responsive. Developed in React."
-            />
-
           </div>
         </div>
       </section>

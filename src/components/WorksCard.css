@@ -50,6 +50,10 @@ DESKTOP VIEW 1440PX
   color: var(--gray-12);
 }
 
+.works__card__tech-logos {
+  display: none;
+}
+
 /********************** 
 TABLET VIEW - 900px / 16px = 56.25em
 **********************/
@@ -86,6 +90,10 @@ MOBILE VIEW - 420PX /16PX = 26.25em
 *************************************/
 @media screen and (max-width: 26.25em) {
 
+  .works__card {
+    gap: 1.6rem;
+  }
+
   .works__card__link {
     width: 100%;
     height: 23.4rem;
@@ -94,5 +102,11 @@ MOBILE VIEW - 420PX /16PX = 26.25em
   .works__card__pic-wrapper {
     width: 100%;
     height: 23.4rem;
+  }
+
+  .works__card__tech-logos {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
   }
 }

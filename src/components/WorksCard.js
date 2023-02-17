@@ -1,14 +1,19 @@
 import React from 'react';
 import "./WorksCard.css";
 import { Link } from "react-router-dom";
+import TechLogo from './TechLogo';
 
 function WorksCard({
   path,
   src,
   alt,
   title,
-  copy
+  copy,
+  techSrcs
 }) {
+  const techSrcsStr = techSrcs ? techSrcs : '';
+  const techSrcsArr = techSrcsStr.split(",");
+
   return (
     <div className="works__card">
       <Link to={path} className="works__card__link" target="_blank">
@@ -23,6 +28,11 @@ function WorksCard({
           {copy}
         </p>
       </div>
+
+      <div className="works__card__tech-logos">
+        <TechLogo paths={techSrcsArr} />
+      </div>
+
     </div>
   )
 }
