@@ -1,3 +1,3 @@
 #Portfolio:
 
-https://react-portfolio-javierolivares.netlify.app/
+https://portfolio-javierolivares.netlify.app/
